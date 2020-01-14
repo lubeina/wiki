@@ -11,6 +11,6 @@ def page_detail(request,page_id):
     context = {
         "page": Page.objects.get(id=page_id)
     }
-    return render(request, 'details.html', context)
+    return render(request, 'detail.html', context)
 
 # Create your views here.
